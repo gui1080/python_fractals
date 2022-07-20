@@ -19,9 +19,4 @@ def mandelbrot(n_rows, n_columns, iterations):
                     break
             output[i,j] = count
             print((i/x_len)*100,"% completed")
-
-    print(output)
-    plt.imshow(output.T, cmap = "hot")
-    plt.axis("off")
-    plt.show()
-mandelbrot(1000,1000,150)
+    return output 
